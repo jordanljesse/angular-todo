@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "angular-todo", "angular-todo\angular-todo.csproj", "{9229174F-D9D6-40A5-8DAD-561320ED5E8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9229174F-D9D6-40A5-8DAD-561320ED5E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9229174F-D9D6-40A5-8DAD-561320ED5E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9229174F-D9D6-40A5-8DAD-561320ED5E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9229174F-D9D6-40A5-8DAD-561320ED5E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D56053E-C3C6-4823-B3BC-CF8191C43D02}
+	EndGlobalSection
+EndGlobal
