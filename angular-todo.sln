@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "angular-todo", "angular-todo\angular-todo.csproj", "{9229174F-D9D6-40A5-8DAD-561320ED5E8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularTodo", "angular-todo\AngularTodo.csproj", "{9229174F-D9D6-40A5-8DAD-561320ED5E8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
