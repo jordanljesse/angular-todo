@@ -1,7 +1,7 @@
 <form>
-  <input type="text" placeholder="enter todo here" />
-  <button value="submit">Submit</button>
+  <input [(ngModel)]="todo.name" name="first" />
+  <button (click)="addTodo(todo)">Submit</button>
 </form>
 <ul>
-  <li *ngFor="let todo of todoList">{{todo}}</li>
+  <li *ngFor="let todo of todos">{{todo.name}}</li>
 </ul>

@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TodosComponent } from './components/todos/todos.component';
-
 import { TodoService } from './todo.service';
 
 @NgModule({
