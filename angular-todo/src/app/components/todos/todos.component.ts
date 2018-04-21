@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Observable } from 'rxjs/Observable';
+
 import { TodoService } from '../../todo.service';
 import { Todo } from '../../todo';
 
@@ -26,6 +26,7 @@ export class TodosComponent implements OnInit {
   getTodos() {
     this.todoService.getTodos().subscribe(response => {
       this.todos = response as Todo[];
+      console.log("getTodos response:", response);
     });
   }
 

@@ -1,37 +1,40 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AngularTodo;
 using AngularTodo.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace angular_todo
+namespace AngularTodo
 {
   [Route("api/[controller]")]
   public class TodoController : Controller
   {
-    // dependancy injection
-    private readonly ITodoService _todoService;
+    private readonly AngularTodoContext _context;
 
-    public TodoController(ITodoService todoService)
+    public TodoController(AngularTodoContext context)
     {
-      _todoService = todoService;
+      _context = context;
     }
 
 
     [HttpGet]
-    public List<Todo> Get()
+    public DbSet<Todos> GetAll()
     {
-      List<Todo> todos = new List<Todo>();
-      todos = _todoService.GetAll();
-      return todos;
+      var allTodos = _context.Todos;
+      return allTodos;
     }
 
     [HttpPost]
-    public void Post(Todo todo)
+    public IActionResult Add(Todos todo)
     {
+      if (ModelState.IsValid)
+      {
+        _context.Todos.Add(todo);
+        _context.SaveChanges();
 
+        return StatusCode(200);
+      }
+
+      return StatusCode(400);
     }
   }
 }
